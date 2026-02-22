@@ -14,6 +14,7 @@ This code is the CUDA implementation of the 1-D Makima interpolation as required
 - If relative PATH does not work, then put in the full PATH to the file.
 
 ## Compilation
+- Check the `Makefile` and make the changes below if and as needed.
 - Sample command:
 ```bash
 nvcc -I/sw/arch/RHEL9/EB_production/2025/software/Python/3.13.1-GCCcore-14.2.0/include/python3.13 -O3 -gencode arch=compute_90,code=sm_90a  -o interp_double_gencode_sm90a interp_double.cu -lpython3.13
